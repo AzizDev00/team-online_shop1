@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+    <title>{% block title %} Home Page {% endblock %}</title>
+
+{% block content %}
+    <h1>Welcome to my website!</h1>
+    <p>Here you can buy RAM, CPU, and Storages for your pc</p>
+    <a style="text-decoration: dashed; color: white;" href="{% url 'products:product-list' %}"><button>SHOW PRODUCTS</button></a>
+{% endblock content %}
