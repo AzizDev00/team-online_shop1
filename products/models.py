@@ -31,7 +31,7 @@ class Products(models.Model):
         return self.name
 
 
-class Review(models.Model):
+class Review(models.Model):               
     comment = models.CharField(max_length=200)
     star_given = models.IntegerField(
         default=0,

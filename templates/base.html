@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>{% block title %}My Website{% endblock %}</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -13,7 +13,7 @@
             min-height: 100vh;
         }
         nav {
-            background-color: #007bff;
+            background-color: #ff0000; /* Red */
             padding: 10px 20px;
             display: flex;
             align-items: center;
@@ -46,13 +46,13 @@
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #00ff00; /* Green */
             border-radius: 5px;
             box-sizing: border-box;
         }
         input[type="submit"],
         button {
-            background-color: #007bff;
+            background-color: #ff0000; /* Red */
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -61,7 +61,7 @@
         }
         input[type="submit"]:hover,
         button:hover {
-            background-color: #0056b3;
+            background-color: #cc0000; /* Darker Red */
         }
         .error-message {
             color: red;
@@ -72,7 +72,7 @@
             margin-top: 5px;
         }
         footer {
-            background-color: #007bff;
+            background-color: #ff0000; /* Red */
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -93,8 +93,12 @@
             width: 24px;
             height: 24px;
         }
-        .social-icons{
+        .social-icons {
             margin: 10px;
+        }
+        .developers {
+            margin-top: 20px;
+            color: #fff;
         }
     </style>
 </head>
@@ -132,8 +136,10 @@
             <a href="#footer">Terms of Service</a> |
             <a href="#footer">Contact Us</a>
         </div>
+        <div class="developers">
+            We have 5 developers working on this project: Azizbek, Elbek, Bekzod, Jahongir, Samandar.
+        </div>
     </footer>
+    
 </body>
 </html>
-
-

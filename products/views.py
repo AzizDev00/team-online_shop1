@@ -27,7 +27,7 @@ class ProductListView(View):
             if not products.exists():
                 messages.warning(request, 'No products found.')
 
-        paginator = Paginator(products, 4)  
+        paginator = Paginator(products, 8)  
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
 
@@ -37,6 +37,7 @@ class ProductListView(View):
             'filter': product_filter,
         }
         return render(request, 'product/product_list.html', context=context)
+
 class ProductDetailView(View):
     def get(self, request, pk):
         product = get_object_or_404(Products, pk=pk)
