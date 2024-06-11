@@ -143,28 +143,28 @@
         <h2>Featured Products</h2>
         <div class="products-grid">
             <div class="product">
-                <a href="http://127.0.0.1:8000/products/detail/4/">
+                <a href="{% url 'products:product-detail' pk=4 %}">
                     <img src="../media/products/ssd480gb.webp" alt="Kingston SSD 500GB">
                 </a>
                 <a class="product-blue" style="color: #007bff; text-decoration: unset;" href="http://127.0.0.1:8000/products/detail/4/">Kingston SSD 500GB</a>
             </div>
             <div class="product">
-                <a href="http://127.0.0.1:8000/products/detail/16/">
+                <a href="{% url 'products:product-detail' pk=16 %}">
                     <img src="../media/products/ryzen9.jpg" alt="AMD Ryzen 5">
                 </a>
                 <a class="product-blue" style="color: #007bff; text-decoration: unset;" href="http://127.0.0.1:8000/products/detail/16/">AMD Ryzen 5</a>
             </div>
             <div class="product">
-                <a href="http://127.0.0.1:8000/products/detail/5/">
+                <a href="{% url 'products:product-detail' pk=5 %}">
                     <img src="../media/products/inteli7.webp" alt="Intel Core i7">
                 </a>
                 <a class="product-blue" style="color: #007bff; text-decoration: unset;" href="http://127.0.0.1:8000/products/detail/5/">Intel Core i7</a>
             </div>
             <div class="product">
-                <a href="http://127.0.0.1:8000/products/detail/8/">
+                <a href="{% url 'products:product-detail' pk=4 %}">
                     <img style="margin-top: 70px;" src="../media/products/1.jpg" alt="Kingston 16GB RAM">
                 </a>
-                <a class="product-blue" style="margin-top: 40px; color: #007bff; text-decoration: unset;" href="http://127.0.0.1:8000/products/detail/8/">Kingston 16GB RAM</a>
+                <a class="product-blue" style="margin-top: 40px; color: #007bff; text-decoration: unset;" href="{% url 'products:product-detail' pk=8 %}">Kingston 16GB RAM</a>
             </div>
         </div>
         
